@@ -1,0 +1,329 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>admin menu</title>
+    
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+    <link type="text/css" href="css/style.css" rel="stylesheet" />
+</head>
+<body>
+    
+      
+  <div class="page-wrapper chiller-theme toggled">
+
+      <div class="navbar">
+        <div id="nav">
+          <a href="#"> <img src="images/logo.png" style="width: 50px;height: 50px;"><span style="color:#830c0c;font-size:15px">ایزی فود </span></a>
+          <a href="#"><button class="btn">ورود / عضویت</button></a>
+        </div>
+      </div>
+  <a id="show-sidebar" class="btn btn-sm btn-dark" href="#">
+    <i class="fas fa-bars"></i>
+  </a>
+  <nav id="sidebar" class="sidebar-wrapper">
+    <div class="sidebar-content">
+      <div class="sidebar-brand">
+        <div id="close-sidebar">
+          <i class="fas fa-times"></i>
+        </div>
+      </div>
+      <div class="sidebar-header">
+        <div class="user-pic">
+          <i class="fas fa-users"></i>
+        </div>
+        <div class="user-info">
+          <span class="user-name">فاطمه امینی
+          </span>
+          <span class="user-role">ادمین</span>
+          <span class="user-status">
+            <span>آنلاین </span>
+            <i class="fa fa-circle"></i>
+          </span>
+        </div>
+      </div>
+      <!-- sidebar-header  -->
+      
+      <div class="sidebar-menu">
+        <ul>
+          <li class="header-menu">
+            <span> منواصلی</span>
+          </li>
+          <li class="sidebar-dropdown active">
+            <a href="#">
+           
+              <span>لیست غذاها</span>
+              <i class="fa fa-tachometer-alt"style="float:right"></i>
+            
+              <span class="badge badge-pill badge-warning">جدید</span>
+            </a>
+            <div class="sidebar-submenu" style="display:block;">
+              <ul>
+                <li>
+                  <a href="#">غذای ایرانی </a>
+                </li>
+                <li>
+                  <a href="#">پاستا</a>
+                </li>
+                <li>
+                  <a href="#">ساندویچ</a>
+                </li>
+                <li>
+                  <a href="#">کباب</a>
+                </li>
+                
+                <li>
+                  <a href="#">بیشتر</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="sidebar-dropdown">
+            <a href="restaurnts.php">
+              <i class="fa fa-globe"style="float:right"></i>
+              <span>رستوران ها</span>
+              <span class="badge badge-pill badge-danger">3</span>
+            </a>
+            <div class="sidebar-submenu">
+              <ul>
+                <li>
+                  <a href="#">فست فود</a>
+                </li>
+                <li>
+                  <a href="#">سنتی</a>
+                </li>
+                <li>
+                  <a href="addNewRest.php">اضافه کردن رستوران</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="sidebar-dropdown">
+            <a href="#">
+              <i class="far fa-gem"style="float:right"></i>
+              <span>سفارش ها</span>
+            </a>
+            <div class="sidebar-submenu">
+              <ul>
+                <li>
+                  <a href="#">خریدآنلاین</a>
+                </li>
+                <li>
+                  <a href="#">مشتری</a>
+                </li>
+                <li>
+                  <a href="#">رزروشده ها</a>
+                </li>
+                <li>
+                  <a href="#">بهترین و پرفروش ها</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          
+          <li>
+            <a href="user.html">
+              <i class="fa fa-chart-line"style="float:right"></i>
+              <span>لیست کاربران</span>
+            </a>
+          </li>
+          <li>
+            <a href="coment.html">
+              <i class="fa fa-book"style="float:right"></i>
+              <span>نظرات کاربران</span>
+              <span class="badge badge-pill badge-primary">*</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              <i class="fa fa-shopping-cart"style="float:right"></i>
+              <span>لیست خرید</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa fa-chart-line"style="float:right"></i>
+              <span>صفحه نخست</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!-- sidebar-menu  -->
+    </div>
+    <!-- sidebar-content  -->
+    <div class="sidebar-footer">
+      <a href="#">
+        <i class="fa fa-bell"></i>
+        <span class="badge badge-pill badge-warning notification">3</span>
+      </a>
+      <a href="#">
+        <i class="fa fa-envelope"></i>
+        <span class="badge badge-pill badge-success notification">7</span>
+      </a>
+      <a href="#">
+        <i class="fa fa-cog"></i>
+        <span class="badge-sonar"></span>
+      </a>
+      <a href="#">
+        <i class="fa fa-power-off"></i>
+      </a>
+    </div>
+  </nav>
+  
+  <!-- sidebar-wrapper  -->
+  <main class="page-content">
+      <div class="container-fluid">
+    
+    <div class="row">
+      <div class="col-lg-12 col-md-12">
+          <h3>سفارش آنلاین انواع غذا از بهترین رستوران ها و فست فود ها</h3><br>
+          <p>ایزی فود سریع ترین راه خرید اینترنتی انواع غذاها از بهترین  رستوران های سطح شهر با قیمتی مناسب و کیفیتی باورنکردنی,با بازدید از سایت ما و نصب اپلیکیشن  ایزی فود براحتی خرید کنید</p>
+          <h4 id="foodl">لیست غذاها</h4><hr><br>
+      </div>
+    </div>
+
+    <div class="row">
+      
+      <div class="col-lg-3 col-md-12 list-food">
+        <a href="#">
+          <div class="food1">
+            <img src="L food/1.jpg" class="photo-food">
+            <div class="caption"><p>پیتزا</p></div>
+          </div>
+        </a>
+      </div><br>
+      
+      <div class="col-lg-3 col-md-12 list-food">
+          <a href="#">
+            <div class="food1">
+              <img src="L food/2.jpg" class="photo-food">
+              <div class="caption"><p>کباب</p></div>
+            </div>
+  
+          </a>
+      </div>
+      
+      <div class="col-lg-3 col-md-12 list-food">
+          <a href="#">
+            <div class="food1">
+              <img src="L food/3.jpg" class="photo-food">
+              <div class="caption"><p>غذای ایرانی</p></div>
+            </div>
+  
+          </a>
+        </div>
+
+        
+      <div class="col-lg-3 col-md-12 list-food">
+          <a href="#">
+            <div class="food1">
+              <img src="L food/4.jpg" class="photo-food">
+              <div class="caption"><p>سوخاری</p></div>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-lg-3 col-md-12 list-food">
+            <a href="#">
+              <div class="food1">
+                <img src="L food/7.jpg" class="photo-food">
+                <div class="caption"><p>ساندویچ</p></div>
+              </div>
+            </a>
+          </div><br>
+       
+
+        
+      <div class="col-lg-3 col-md-12 list-food">
+          <a href="#">
+            <div class="food1">
+              <img src="L food/8.jpg" class="photo-food">
+              <div class="caption"><p>استیک</p></div>
+            </div>
+          </a>
+      </div>
+       
+        <div class="col-lg-3 col-md-12 list-food">
+            <a href="#">
+              <div class="food1">
+                <img src="L food/9.jpg" class="photo-food">
+                <div class="caption"><p>پاستا</p></div>
+              </div>
+            </a>
+        </div>
+        
+           
+      <div class="col-lg-3 col-md-12 list-food">
+          <a href="#">
+            <div class="food1">
+              <img src="L food/4650.jpg" class="photo-food">
+              <div class="caption"><p>صبحانه</p></div>
+            </div>
+          </a>
+      </div>
+
+           
+      <div class="col-lg-3 col-md-12 list-food">
+          <a href="#">
+            <div class="food1">
+              <img src="L food/8838.jpg" class="photo-food">
+              <div class="caption"><p>سالاد</p></div>
+            </div>
+          </a>
+      </div>
+
+           
+      <div class="col-lg-3 col-md-12 list-food">
+          <a href="#">
+            <div class="food1">
+              <img src="L food/18154.jpg" class="photo-food">
+              <div class="caption"><p>سوپ</p></div>
+            </div>
+          </a>
+      </div>
+
+         
+      <div class="col-lg-3 col-md-12 list-food">
+          <a href="#">
+            <div class="food1">
+              <img src="L food/v3pblceuc7cren261oe0t7ucqj4m35nd.jpg" class="photo-food">
+              <div class="caption"><p>رژیمی</p></div>
+            </div>
+          </a>
+      </div>
+
+         
+      <div class="col-lg-3 col-md-12 list-food">
+          <a href="#">
+            <div class="food1">
+              <img src="L food/201743021135327580a.jpg" class="photo-food">
+              <div class="caption"><p>دسر</p></div>
+            </div>
+          </a>
+      </div>
+<!--end row-->
+    </div><br>
+    <div >
+      
+      <a href="#"><button class="btn-1"><i class="fas fa-trash-alt"></i></button></a>
+      <a href="#" style="margin-left:5px;"><button class="btn-1">پیشنهاد خود را اضافه کنید</button></a>
+    
+    </div>
+
+
+<!--end div container-->
+</div>
+  </main>
+
+  <!-- page-content" -->
+</div>
+        
+ <!--javascript-->
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/bootstrap.min.js"></script> 
+    <script src="js/file.js"></script>
+</body>
+</html>
